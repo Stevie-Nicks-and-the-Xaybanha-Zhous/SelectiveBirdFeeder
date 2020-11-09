@@ -1,0 +1,51 @@
+#include <Wire.h>
+#include <ESP32Servo.h>
+
+const int servoPin = 23; // Servo data pulse pin
+
+Servo myservo;  // create servo object to control a servo
+
+int inPin = 21;
+int val = 0;
+int pos = 0;    // variable to store the servo angle position
+byte State = 0;
+
+void setup()
+{
+  myservo.attach(servoPin);  // assigns servo pin to the servo object
+
+  Serial.begin(115200);
+  
+  pinMode(inPin, INPUT);
+  pinMode(inPin, INPUT);
+  
+  delay(50);
+
+}
+
+void loop()
+{
+//  for (pos = 0; pos <= 180; pos += 1) // goes from 0 degrees to 180 degrees in 1 deg steps
+//  {
+//    myservo.write(pos);               // tell servo to go to position in variable 'pos'
+//    delay(15);                        // waits 15ms for the servo to reach the position
+//  }
+  
+  State = digitalRead(inPin);
+  Serial.print("\t Pin Status = ");
+  Serial.println(State);
+  
+  if (State == LOW)
+  {
+    pos = 180;
+    myservo.write(pos);               // tell servo to go to position in variable 'pos'
+    delay(15); 
+  }
+  if (State == HIGH){
+    for (pos = 180 ; pos >= 0 ; pos -= 1) // goes from 180 degrees to 0 degrees
+    {
+      myservo.write(pos);               // tell servo to go to position in variable 'pos'
+      delay(15);                        // waits 15ms for the servo to reach the position
+    }
+  }
+}
