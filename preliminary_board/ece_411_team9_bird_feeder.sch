@@ -3288,7 +3288,7 @@ JST PH 2-pin thru-home side entry</description>
 <plain>
 <text x="215.9" y="15.24" size="1.778" layer="94">Bird_Feeder by Calvin Xaybanha</text>
 <text x="215.9" y="10.16" size="1.778" layer="94">Last Updated: 2020/11/18, 18:10.</text>
-<text x="162.56" y="15.24" size="1.778" layer="94">Revision 1.0 schematic of the bird
+<text x="162.56" y="15.24" size="1.778" layer="94">Revision 1.1 schematic of the bird
 feeder practicum project by Team 9.
 </text>
 <wire x1="187.96" y1="83.82" x2="187.96" y2="30.48" width="0.1524" layer="104"/>
