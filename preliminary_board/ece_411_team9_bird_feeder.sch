@@ -3287,8 +3287,8 @@ JST PH 2-pin thru-home side entry</description>
 <sheet>
 <plain>
 <text x="215.9" y="15.24" size="1.778" layer="94">Bird_Feeder by Calvin Xaybanha</text>
-<text x="215.9" y="10.16" size="1.778" layer="94">Last Updated: 2020/11/18, 18:10.</text>
-<text x="162.56" y="15.24" size="1.778" layer="94">Revision 1.1 schematic of the bird
+<text x="215.9" y="10.16" size="1.778" layer="94">Last Updated: 2020/11/30, 12:39PM.</text>
+<text x="162.56" y="15.24" size="1.778" layer="94">Revision 1.2 schematic of the bird
 feeder practicum project by Team 9.
 </text>
 <wire x1="187.96" y1="83.82" x2="187.96" y2="30.48" width="0.1524" layer="104"/>
@@ -3525,7 +3525,7 @@ feeder practicum project by Team 9.
 <label x="86.36" y="78.74" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$6" class="2">
+<net name="SERV_OUT" class="2">
 <segment>
 <pinref part="IC1" gate="G$1" pin="PB1/PCINT1/AIN1/OC0B/INT0/MISO"/>
 <wire x1="111.76" y1="119.38" x2="104.14" y2="119.38" width="0.1524" layer="91"/>
@@ -3534,6 +3534,7 @@ feeder practicum project by Team 9.
 <wire x1="195.58" y1="129.54" x2="213.36" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="93.98" x2="195.58" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="93.98" x2="195.58" y2="129.54" width="0.1524" layer="91"/>
+<label x="172.72" y="93.98" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="+5V" class="1">
@@ -3591,7 +3592,7 @@ feeder practicum project by Team 9.
 <label x="124.46" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$9" class="2">
+<net name="MIC_OP3" class="2">
 <segment>
 <pinref part="IC3" gate="A" pin="+IN"/>
 <wire x1="93.98" y1="63.5" x2="119.38" y2="63.5" width="0.1524" layer="91"/>
@@ -3600,7 +3601,7 @@ feeder practicum project by Team 9.
 <wire x1="93.98" y1="63.5" x2="93.98" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$13" class="2">
+<net name="MIC_OP2" class="2">
 <segment>
 <pinref part="IC3" gate="A" pin="-IN"/>
 <wire x1="119.38" y1="58.42" x2="114.3" y2="58.42" width="0.1524" layer="91"/>
@@ -3612,7 +3613,7 @@ feeder practicum project by Team 9.
 <pinref part="R6" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$4" class="2">
+<net name="FSNS_OP3" class="2">
 <segment>
 <pinref part="FORC_SENS" gate="G$1" pin="2"/>
 <pinref part="IC2" gate="A" pin="+IN"/>
@@ -3628,7 +3629,7 @@ feeder practicum project by Team 9.
 <wire x1="33.02" y1="111.76" x2="33.02" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$10" class="2">
+<net name="FSNS_OUT" class="2">
 <segment>
 <pinref part="IC2" gate="A" pin="OUT"/>
 <pinref part="IC1" gate="G$1" pin="PB4/PCINT4/ADC2"/>
@@ -3652,7 +3653,7 @@ feeder practicum project by Team 9.
 <label x="142.24" y="60.96" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$8" class="2">
+<net name="FSNS_OP2" class="2">
 <segment>
 <pinref part="IC2" gate="A" pin="-IN"/>
 <wire x1="48.26" y1="109.22" x2="25.4" y2="109.22" width="0.1524" layer="91"/>
@@ -3673,7 +3674,7 @@ feeder practicum project by Team 9.
 <approved hash="104,1,53.34,104.14,IC2,V-,GND,,,"/>
 <approved hash="104,1,124.46,68.58,IC3,V+,+5V,,,"/>
 <approved hash="104,1,124.46,53.34,IC3,V-,GND,,,"/>
-<approved hash="113,1,43.3812,119.606,FORC_SENS,,,,,"/>
+<approved hash="113,1,43.3812,119.576,FORC_SENS,,,,,"/>
 <approved hash="113,1,130.071,89.431,FRAME1,,,,,"/>
 </errors>
 </schematic>
